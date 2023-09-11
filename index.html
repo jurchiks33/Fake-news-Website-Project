@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Most Trusted News Website</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js"></script>
+  </head>
+<body>
+    <div class="navigation">
+      <!-- unordered list below is responsible for navigation over the different pages
+      also further styling for navigation menu is applied in style.css page  -->
+        <ul>
+            <a href="/index.html">The Main Trusted News</a>
+            <a href="/notSoTrustedNews.html">Not So Trusted News</a>
+            <a href="/isItNews.html">Is It News?</a>
+            <a href="/whereDontFindUs.html">Where dont Find Us</a>
+            <a href="/contactOurTrustedEditor.html">Contact Our Trusted Editor</a>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+            <h1>NoN Experience</h1>
+            <h2>The Most "Trusted" News</h2>
+          </div>
+        </div>
+        <div class="content">
+          <h2>The One and many</h2>
+          <div class="description">
+            <p>The only real thing on this website you will find is my presence and pictures,
+             which are licensed and bought on <a href="http://www.envato.com/"><strong>Envato</strong></a> for any questions regarding asset licenses contact me directly to <a href="mailto:jurisslisans@inbox.lv">jurisslisans@inbox.lv</a> or check asset folder in files.
+            As for other matters this website is made to be a fun example of a skillset acquired on a web development course </p>
+            <p>Early 2022. bored with world pandemic situation, our main and due the budget constrains only redactor Juris Slisans decided to pursue his childhood dream in Computer Science. After a long time in meditation, visiting great Norwegian mountains and eating raw salmon at the side of the fjord he finally heard the voice
+            "Juris your skill at eating raw salmon is disgusting and you will newer be a Viking, that why we are pointing you to the best University out there to study Computer Science".
+            After slowly opening eyes Juris know that he have blessing of the Salomon King to apply to  <a href="http://www.london.ac.uk/"><strong>London University</strong>.</a> Unfortunately while meditating
+            he got struck by lightning ten times and all he can manage was to make Fake new newspaper </p>
+          </div>
+        </div>
+      <!-- Below are a code for 6 panels which are marked as a activity panels and have 
+      text stiled with CSS on it, later can add content to this panels, it can be some activities  -->
+        <div class="activities-panel">  
+          <h2>Other news</h2>
+          <a class="activity">
+            This
+          </a>
+          <a class="activity">
+            Is
+          </a>
+          <a class="activity">
+            Non
+          </a>
+          <a class="activity">
+            working
+          </a>
+          <a class="activity">
+            Button
+          </a>
+          <a class="activity">
+            Section
+          </a>
+        </div>
+      
+        <div class="footer">
+          <h2>Web development Exam work 2023, Juris Slisans.</h2>
+        </div>
+        <script>
+          const activitiesPanel = document.querySelector('.activities-panel');
+          const activities = activitiesPanel.querySelectorAll('.activity');
+          setInterval(() => {
+            activities.forEach(activity => {
+              const randomColor = Math.floor(Math.random()*16777215).toString(16);
+              activity.style.backgroundColor = '#' + randomColor;
+            });
+          }, 2000);
+        </script>
+
+        <!-- script above is making buttons change colors every 2 sec.
+        randomly. to manipulate values we can change colors from random to specific
+        or we can change timer by manipulating '2000' value -->
+</body>
+</html>

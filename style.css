@@ -1,0 +1,373 @@
+/* The Main Trusted News CSS starts*/
+body{
+    background-color: #ffffff;
+    margin: 0px;
+    padding:0px;
+  }
+/* styling below responsible for navigation bar style
+if needed can change colors and positioning */
+  .navigation{ 
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    left: 0px;
+    overflow-y: auto;
+    padding:30px;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  .navigation a{
+    color: #736B92;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+  }
+  /* below is logo styling with font and backupfont 
+  also text alignments  */
+  a.logo{
+    color: #2176FF;
+    font-family: 'Raleway',sans-serif;
+    font-size: 34px;
+    padding: 0px 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* Banner styling with picture positioning in it is 
+  in a style below. */
+  .banner{
+    background-image: url("/Images/Fake\ news1.jpg");
+    background-position: center top;
+    background-size: cover;
+    border-bottom: 100px solid #dddddd;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+  }
+  .banner-text{
+    position: relative;
+    top: 50px;
+  }
+  h1{
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h2{
+    color: #2176FF;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .banner h2{
+    font-size: 120px;
+    margin: -40px 0px 80px 0px;
+  }
+  /* Below styling is responsible for content
+  appearance and style, also picture style and position in it. */
+  .content{
+    background-image: url('/Images/Fake-news4.jpg');
+    background-position: center top - 50px;
+    background-size: 2000px 1000px;                      /*content picture size*/
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 auto;
+    overflow-y: auto;
+    padding: 80px 0px;
+    position: relative;
+    text-align: center;
+  }
+  p{
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: left;
+  }
+  .description{
+    display: inline-block;
+    width: 70%;
+  }
+  /* Below styling is a for a buttons which change colors on timer to random
+  which is denoted by script in a page, style below is responsible
+  for panel position and display with icons, text and increase, decrease in text size */
+  .activities-panel{
+    margin-bottom: 40px;
+    padding: 80px 0px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .activities-panel h2 {
+    width: 100%;
+  }
+  .activity{
+    background-color: #2176FF;
+    box-sizing: border-box;
+    width: 240px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px;
+  }
+
+  /* below is style responsible for footer, its color, position
+  and text aligh */
+  .footer{
+    background-color: #2176FF;
+    padding: 30px;
+    text-align: center;
+  }
+  .footer h2{
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  /* Below styling is responsible for hover effect over 
+  clickable text, whic increase and decrease on mouse in and mouse out also change 
+  text color with some time delay. Delay is 0.2 sec on mouse in and 0.1 sec on out.
+  could be easy changed if needed */
+  a {
+    cursor: default;
+    text-decoration-line: none;
+  }
+  a:hover {
+    color: #374682;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .btn {
+    font-family: 'Raleway', sans-serif;
+  }
+  .btn:hover {
+    background-color: #fff;
+    color: #2176ff;
+    transition: color .2s ease-in,
+    background-color .2s ease-in;
+  }
+  .btn:active {
+    font-size: 18px;
+    transition: font-size .1s ease-in-out;
+  }
+  .activity {
+    border: 1px solid #2176ff;
+    cursor:pointer;
+    text-decoration: none;
+  }
+  .activity:hover {
+    background-color: green;
+    color: #5495ff;
+    transition: color .1s ease-in, 
+    background-color .1s ease-in
+  }
+  /* style below is responsible for text increase on click
+  in a other new section */
+  .activity:active {
+    font-size: 40px;
+    transition: font-size .1s;
+  }
+  /* The Main Trusted News CSS ends*/
+  /* The notSoTrustedNews CSS starts*/
+  #products {
+    color: #d6d6d6;
+}
+/* below style is responsible on mouse in and mouse out hover effect on a pictures
+pictures get zoomed in and out with some time delay */
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.item-img {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .item-img:hover {
+    transform: scale(1.02);
+  }
+
+
+.item h2 {
+    margin-top: 0;
+    color: hsl(115, 94%, 50%);
+    text-align: center;
+}
+
+.item img {
+    max-width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item p {
+    margin: 0;
+    font-size: 18px;
+    color: #1b1b1a;
+    margin-bottom: 5px;
+}
+
+.item button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+
+}
+
+.item button:hover {
+    transform: scale(1.1);
+} 
+ /* code below is responsible for the position and color of the buttons
+ which increase and decrease font size */
+.button-container {
+  position: fixed;
+  top: 150px;
+  right: 0px;
+}
+#increase-btn {
+  background-color: rgb(88, 152, 88);
+}
+
+#decrease-btn {
+  background-color: rgb(246, 113, 113);
+}
+
+/* The notSoTrustedNews CSS ends*/
+/* The isItNews CSS starts*/
+
+
+/* The isItNews CSS ends*/
+
+/* The whereDontFindUs CSS starts*/
+.banner2 {
+  background-image: url("/Images/Fake-news\ 4.1.JPG");
+  background-position: center top;
+  background-size: cover;
+  border-bottom: 100px solid #dddddd;
+  height: 700px;
+  position: relative;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+}
+.content2 {
+  background-image: url("/Images/Fake-news\ 4.2.jpg");
+  background-position: center top - 50px;
+  background-size: 2000px 1000px;                      /*content picture size*/
+  border-bottom: 1px solid #eeeeee;
+  margin: 0 auto;
+  overflow-y: auto;
+  padding: 80px 0px;
+  position: relative;
+  text-align: center;
+}
+
+/* The whereDontFindUs CSS starts*/
+/* The whereDontFindUs CSS starts*/
+
+/* The contactOurTrustedEditor CSS starts*/
+#contact {
+  color: white;
+  background-image: none;
+  background-color: rgb(41, 39, 39);
+  font-family: 'Raleway',sans-serif;
+  text-align: center;
+} 
+/* below style is responsible for contact us picture positioning and coloring */
+img.align-left {
+  float: left;
+  margin-right: 10px;
+} 
+img.medium {
+  width: 450px;
+  height: 150px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+/* Styling of the submit form below, change values for different input sizes
+also text size and tickness */
+form {
+  max-width: 500px;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+}
+/* style below is responsible for submit button hover scale and padding */
+.body1 {
+padding-top: 100px;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* The contactOurTrustedEditor CSS ends*/

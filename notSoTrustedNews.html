@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Most Trusted News Website</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js"></script>
+    <!-- I try to link script page in a link above to the page which holds only scripts,
+    but for some reasons scripts are not working, so i add them at the bottom of the html, so they
+let the page load and dont use resources at the start of the page -->
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <a href="/index.html">The Main Trusted News</a>
+            <a href="/notSoTrustedNews.html">Not So Trusted News</a>
+            <a href="/isItNews.html">Is It News?</a>
+            <a href="/whereDontFindUs.html">Where dont Find Us</a>
+            <a href="/contactOurTrustedEditor.html">Contact Our Trusted Editor</a>
+        </ul>
+    </div>
+    <div class="item">
+        <h2>Masked Barber</h2>
+        <img class="item-img" src="/Images/Fake-news 2.1.jpg" alt="Item 1">
+        <p>Post-COVID pandemic still affects barbers in Norway, they are still used to face covers, which by they words let them hide grin from they faces while cutting customers hair.
+        9 Michuline ring, famous Norwegian barber Ragnar Barberman said in breaking news at midnight news that he refuses to work without face cover due to fact that he can hide his 4 white teeth behind the face mask while 
+        doing his daily work.
+        </p>
+        <p><strong>Subscribe for full storry</strong></p>
+        <button>Subscribe</button>
+    </div>
+    <div class="item">
+        <h2>Black screen BOOM</h2>
+        <img class="item-img" src="/Images/Fake-news 2.2.jpg" alt="Item 2">
+        <p>Customers around the Norway have received they new TV stations without power cables due to shortages in coal which is used to warm up
+        workers of the power cable factory. Hundreds of workers are using power cables to connect with the King of Salomon for 
+        better luck in coal finding. Meanwhile black screens get trendy in a Norway and further designed TV models are projected to come out without power cable support.        
+         </p>
+        <p><strong>Subscribe for full storry</strong></p>
+        <button>Subscribe</button>
+    </div>
+    <div class="item">
+        <h2>PhoneBall</h2>
+        <img class="item-img" src="/Images/Fake-news 2.3.jpg" alt="Item 3">
+        <p> Phonemerican football association decided from 2024. play Phonemerican football exclusively on a mobile devices. Thousands of players around the globe are changing
+            they equipment for comfortable chairs and sofas. Phonemerican football arenas around the world will be further used for coal storage for they trading partners. 
+            Leader of AFIF commented it as a step towards brighter and coal save future. While it is unclear how fans from Norway will watch games on the black screens, one thing is clear "Game ON".
+        </p>
+        <p><strong>Subscribe for full story, redactors need money.</strong></p>
+        <button>Subscribe</button>
+    </div>
+    <div class="item">
+        <h2>White is new Green</h2>
+        <img class="item-img" src="/Images/Fake-news 2.4.jpg" alt="Item 4">
+        <p> Century ago humanity discovered first green apple and since then green was a standard for everyday culinary life. But it may change due to coal shortages in a world and 
+            a shortages in air pollution, which affected green vegetables in a unpredictable before manner. Today farmers around the globe discover more and more white vegetables and after long 
+            debates in a world top scientific research centers thesis was formed that decreasing pollution in air decreased substantially vegetable ability to produce green skin.
+        </p>
+        <p><strong>Last chance subscribe for full story!</strong></p>
+        <button>YES i wish to subscribe</button>
+    </div>
+    <div class="footer">
+          <h2>Web development Exam work 2023, Juris Slisans.</h2>
+    </div>
+      <div class="button-container">
+        <button id="increase-btn">Increase Font Size</button>
+        <button id="decrease-btn">Decrease Font Size</button>
+      </div>
+      <!-- script below is responsible for increase and decrease in a font style 
+      for <p> element which is targeted by script. additional button styling
+        can be found in style. css page. Code above is responsible for creating
+    button container which can be targeted by css and scrip after -->
+      <script>
+        function increaseFontSize() {
+          var pElements = document.getElementsByTagName('p');
+          for (var i = 0; i < pElements.length; i++) {
+            var fontSize = window.getComputedStyle(pElements[i], null).getPropertyValue('font-size');
+            pElements[i].style.fontSize = parseInt(fontSize) + 1 + 'px';
+          }
+        }
+      
+        function decreaseFontSize() {
+          var pElements = document.getElementsByTagName('p');
+          for (var i = 0; i < pElements.length; i++) {
+            var fontSize = window.getComputedStyle(pElements[i], null).getPropertyValue('font-size');
+            pElements[i].style.fontSize = parseInt(fontSize) - 1 + 'px';
+          }
+        }
+      
+        var increaseButton = document.getElementById('increase-btn');
+        increaseButton.addEventListener('click', increaseFontSize);
+      
+        var decreaseButton = document.getElementById('decrease-btn');
+        decreaseButton.addEventListener('click', decreaseFontSize);
+      </script>
+
+
+</body>
+</html>

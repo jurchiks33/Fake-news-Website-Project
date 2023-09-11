@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Most Trusted News Website</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <a href="/index.html">The Main Trusted News</a>
+            <a href="/notSoTrustedNews.html">Not So Trusted News</a>
+            <a href="/isItNews.html">Is It News?</a>
+            <a href="/whereDontFindUs.html">Where dont Find Us</a>
+            <a href="/contactOurTrustedEditor.html">Contact Our Trusted Editor</a>
+        </ul>
+    </div>
+    <div class="body1">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+    </div>
+    <!-- Section belows contains contact forms code with targeting for email, name
+    also there is set 'required state' for submitting, making it unavailable to submit
+before all windows are filled up. Text area is set to 5 rows, which can be increased.decreased if needed -->
+    <section>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <div class="footer">
+        <h2>Web development Exam work 2023, Juris Slisans.</h2>
+    </div>
+    <script>
+        const button = document.querySelector('input[type="submit"]');
+        button.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.1)';
+        });
+        button.addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
+    <!-- script above is to make increase and decrease in submit button size 
+    scale can be adjusted by manipulating 'scale (1.1)' number -->
+
+</body>
+</html>
